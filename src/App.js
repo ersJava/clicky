@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Images from './Images';
 
 class App extends Component {
   render() {
@@ -11,6 +11,7 @@ class App extends Component {
           <h2>Clicky Game!</h2>
           <h4>Click on an image to earn points, but don't click on any more than once!</h4>
           </container>
+          <Images />
       </div>
     );
   }
