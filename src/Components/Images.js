@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import IMAGES from './data/images';
+import IMAGES from '../data/images';
 
 const Image = props => {
     const { image } = props.image;
     return(
-        <img src={image} alt='sailor moon character' style={{ width: 200, height: 120 }} />
+        <div style={{ display: 'inline-block', width: 300, padding: 10}}>
+        <img src={image} alt='sailor moon character' style={{ width: 200, height: 150,}} />
+        </div>
     ) 
 }
 
 const Images = () => (
     <div>
-      <h2>Buttons</h2>
       <div>
         {
           IMAGES.map(IMAGE => (
