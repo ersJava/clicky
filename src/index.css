@@ -1,36 +1,40 @@
 @font-face {
-  font-family: OpenSansRegular;
+  font-family: OpenSans;
   src: url(assets/OpenSans-Regular.ttf);
   font-weight: 800;
 } 
 
 @font-face {
-  font-family: PompiereRegular;
-  src: url(assets/Pompiere-Regular.ttf);
+  font-family: Sofa;
+  src: url(assets/SofadiOne-Regular.ttf)
  
 }
 
 body {
   text-align: center;
   font-size: 26px;
-  padding: 2.5%;
   font-family: 'OpenSansRegular';
 }
 
 h1 {
-  font-family: 'PompiereRegular';
-  font-size: 80px;
+  font-family: 'Sofa';
 }
 
+
+
 h2 {
-  font-family: 'PompiereRegular';
+  font-family: 'Sofa';
   font-size: 60px;
 }
 
 h3 {
-  font-family: 'PompiereRegular';
-  font-size: 40px;
+  font-family: 'OpenSans';
+  font-size: 24px;
+  color: rgb(224, 71, 173);
+  font-weight: 600;
 }
+
+
 
 @keyframes fade-out {
   from {opacity: 100}
