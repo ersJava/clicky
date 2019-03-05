@@ -2,13 +2,10 @@ import React from 'react';
 
 const styles = {
   container: {
-    padding: "40px"
+    padding: "10px",
+    color: "white",
+    background: "rgb(224, 71, 173)"
   },
-  h2: {
-    color: "pink"
-
-  }
-
 }
 
 
@@ -17,13 +14,13 @@ function Header() {
     <div style={styles.container}>
     <div class="row">
     <div class="col">
-      <h2 style={styles.h2}>Clicky Game</h2>
+      <h2>Clicky Game</h2>
     </div>
     <div class="col">
-    You Guessed<div id="guess"></div>
+    <h2>You Guessed: <div id="guess"></div></h2>
     </div>
     <div class="col">
-      Score: | Top Score:
+     <h2>Score:<div id="current-scoer"></div>Top Score:<div id="top-score"></div></h2>
     </div>
   </div>
   </div>
