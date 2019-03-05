@@ -1,25 +1,12 @@
-import React, { Component } from 'react';
-import IMAGES from '../data/images';
+import React from 'react';
 
 const Image = props => {
-    const { image } = props.image;
+    const { image, click } = props;
     return(
-        <div style={{ display: 'inline-block', width: 300, padding: 10}}>
-        <img src={image} alt='sailor moon character' style={{ width: 200, height: 150,}} />
+        <div style={{ display: 'inline-block', width: 300, padding: 10}} onClick={() => click(image.id)}>
+        <img src={image.image} alt='sailor moon character' style={{ width: 200, height: 150,}} />
         </div>
     ) 
 }
 
-const Images = () => (
-    <div>
-      <div>
-        {
-          IMAGES.map(IMAGE => (
-            <Image key={IMAGE.id} image={IMAGE} />
-          ))
-        }
-      </div>
-    </div>
-  )
-
- export default Images;
+ export default Image;

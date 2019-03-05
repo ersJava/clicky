@@ -1,9 +1,50 @@
 import React, { Component } from 'react';
-import Images from './Components/Images';
+import Image from './Components/Images';
 import Header from './Components/Header/Header';
 import Hero from './Components/Hero/Hero';
+import IMAGES from './data/images';
 
 class App extends Component {
+
+  state = {
+    images: IMAGES,
+  }
+
+  renderImages = () => (
+    <div>
+      <div>
+        {
+          IMAGES.map(IMAGE => (
+            <Image key={IMAGE.id} image={IMAGE} click={this.handlesOnClick} />
+          ))
+        }
+      </div>
+    </div>
+  )
+
+ handlesOnClick = (id) => {
+  console.log(id)  
+  this.setState({
+    images: this.shuffle(IMAGES)
+    // loop over all objects state 
+    // (for in loop)
+    // finding matching id and set to click
+    // check if it's been clicked
+    // if yes, then end if not continue
+    // set to true 
+   
+})
+ }
+
+
+shuffle = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+  
   render() {
     return (
       <div>
@@ -12,8 +53,8 @@ class App extends Component {
           <h1>Clicky Game</h1>
           <h3>Click on an image to earn points but don't click on the same image twice</h3>
         </Hero>
-        <Images />
-          
+     
+          {this.renderImages()}
   
           </div>
      
