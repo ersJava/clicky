@@ -1,5 +1,7 @@
 # Clicky Game
 
+https://gentle-escarpment-16828.herokuapp.com/
+
 Interactive memory game built with React. The applicatiion's UI components are broken up and component states are managed to respond to user events. 
 
 ## How It Works
