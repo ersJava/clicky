@@ -8,7 +8,7 @@ Interactive memory game built with React. The applicatiion's UI components are b
 
 2. Every time an image is clicked, the images will shuffle themselves in a random order.
 
-3. If the user choses an image that has already been selected, the game is over and will be reset back to 0. 
+3. If the user choses an image that has already been selected, the game is over and will be reset back to 0 and the game starts over. 
 
 ![choice screenshot](screenshot.png)
 ![choice screenshot](sailormoon.gif)
